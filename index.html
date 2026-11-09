@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+  <!-- Primary SEO -->
+  <title>Search Bar Animation | mrchandrayee</title>
+  <meta name="description" content="An elegant animated search bar with expand, focus, and results reveal transitions. Pure HTML, CSS & JavaScript.">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/search-bar-animation/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/search-bar-animation/">
+  <meta property="og:title" content="Search Bar Animation | mrchandrayee">
+  <meta property="og:description" content="An elegant animated search bar with expand, focus, and results reveal transitions. Pure HTML, CSS & JavaScript.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/search-bar-animation/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/search-bar-animation/">
+  <meta name="twitter:title" content="Search Bar Animation | mrchandrayee">
+  <meta name="twitter:description" content="An elegant animated search bar with expand, focus, and results reveal transitions. Pure HTML, CSS & JavaScript.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/search-bar-animation/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Search Bar Animation",
+    "description": "An elegant animated search bar with expand, focus, and results reveal transitions. Pure HTML, CSS & JavaScript.",
+    "url": "https://mrchandrayee.github.io/search-bar-animation/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <meta name="theme-color" content="#05090a">
+  
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main class="page">
+    <header class="heading">
+      <h1>Search Bar<br><span>Animation</span></h1>
+    </header>
+
+    <section class="stage" aria-label="Animated search bar demo">
+      <div class="search-demo" id="search-demo">
+        <div class="search-shadow" aria-hidden="true"></div>
+        <div class="search-field" id="search-field">
+          <button class="search-trigger" id="search-trigger" type="button" aria-label="Open search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m15.5 15.5 4.2 4.2"></path></svg>
+          </button>
+          <input id="search-input" type="search" placeholder="Search something..." autocomplete="off" aria-label="Search">
+          <button class="clear-button" id="clear-button" type="button" aria-label="Clear search and close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+          </button>
+        </div>
+        <p class="suggestion" id="suggestion" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <div class="signature"><span>@</span> _code_and_chill_</div>
+    <p class="hint">Tap the search icon to expand · Type to search · Press Esc to close</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
